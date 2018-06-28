@@ -5,8 +5,6 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :image_url
       t.integer :kinokz_id
-
-      t.timestamps
     end
   end
 end
