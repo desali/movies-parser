@@ -15,12 +15,14 @@ ActiveRecord::Schema.define(version: 2018_06_27_083317) do
   create_table "cinemas", force: :cascade do |t|
     t.string "name"
     t.integer "city_id"
+    t.integer "kinokz_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
+    t.integer "kinokz_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -29,6 +31,7 @@ ActiveRecord::Schema.define(version: 2018_06_27_083317) do
     t.string "title"
     t.text "description"
     t.string "image_url"
+    t.integer "kinokz_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
